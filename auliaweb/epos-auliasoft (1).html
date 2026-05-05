@@ -545,6 +545,8 @@ section { padding: 5rem 2rem; }
 .cross { color: #ef4444; font-weight: 700; }
 .partial { color: var(--accent); font-weight: 700; }
 
+
+
 /* K. COMPLEMENTARY */
 #complementary { background: var(--bg); }
 .comp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
@@ -573,7 +575,14 @@ section { padding: 5rem 2rem; }
   object-fit: cover;
   border-radius: 12px;
 }
-
+.comp-body h3 {
+  margin-bottom: 10px;
+}
+.comp-price {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
 /* L. PROCESS & POLICY */
 #process { background: var(--dark); }
 .process-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; }
@@ -762,8 +771,7 @@ footer a { color: var(--accent); text-decoration: none; }
     <p class="section-sub fade-up">Pilih paket yang sesuai kebutuhan bisnis Anda. Semua paket sudah termasuk akses penuh ke fitur kasir, manajemen stok, dan laporan.</p>
     <div class="pricing-grid">
       <div class="pricing-card fade-up">
-        <div class="pricing-tier">Paket Promo</div>
-        <div class="pricing-name">Untuk UMKM</div>
+        <div class="pricing-name">Paket UMKM</div>
 
         <div class="pricing-price">
           <span class="pricing-amount">Rp 50.000</span>
@@ -771,12 +779,16 @@ footer a { color: var(--accent); text-decoration: none; }
         </div>
 
         <ul class="pricing-features">
-          <li>1 Lokasi Bisnis</li>
-          <li>2 Pengguna</li>
+          <li>Single Outlet</li>
+          <li>Toko Online</li>
           <li>Maksimal 500 Produk</li>
-          <li>Faktur Tidak Terbatas</li>
-          <li>Untuk usaha kecil</li>
-          <li>Support Online</li>
+          <li>kasir Online</li>
+          <li>Manajemen Inventori</li>
+          <li>CRM</li>
+          <li>Laporan Lengkap</li>
+          <li>Manajemen Karyawan</li>
+          <li>Pencatatan Keuangan (Invoice,SO,DO)</li>
+          <li>Digital Payment (QRIS)</li>
         </ul>
 
         <a href="https://pos.auliasoft.com/business/register?package=1" target="_blank" class="pricing-cta">
@@ -787,16 +799,19 @@ footer a { color: var(--accent); text-decoration: none; }
         <div class="pricing-name">Basic</div>
         <div class="pricing-price">
           <span class="pricing-amount">Rp 149.999</span>
+          <span class="pricing-period">/ bulan</span>
         
         </div>
         <ul class="pricing-features">
           <li>Single Outlet</li>
           <li>Toko Online</li>
-          <li>Kasir Online</li>
+          <li>kasir Online</li>
           <li>Manajemen Inventori</li>
-          <li>CRM & Karyawan</li>
-          <li>Pencatatan Keuangan</li>
-          <li>Pembayaran QRIS</li>
+          <li>CRM</li>
+          <li>Laporan Lengkap</li>
+          <li>Manajemen Karyawan</li>
+          <li>Pencatatan Keuangan (Invoice,SO,DO)</li>
+          <li>Digital Payment (QRIS)</li>
         </ul>
         <a href="https://pos.auliasoft.com/business/register?package=1" target="_blank" class="pricing-cta">Mulai Basic</a>
       </div>
@@ -805,17 +820,19 @@ footer a { color: var(--accent); text-decoration: none; }
         <div class="pricing-name">Basic Plus</div>
         <div class="pricing-price">
           <span class="pricing-amount">Rp 349.999</span>
+          <span class="pricing-period">/ bulan</span>
         </div>
         <ul class="pricing-features">
           <li>Multi Outlet & Toko Online</li>
           <li>Kasir Online (Atur Meja & Multi-satuan)</li>
-          <li>Stok (COGS, Produksi, Transfer Outlet)</li>
+          <li>Manajemen Inventori (COGS, Produksi, Transfer Outlet)</li>
           <li>CRM & Deposit Pelanggan</li>
           <li>Laporan Analisis Bisnis Lengkap</li>
-          <li>SDM (Absensi Foto & Otorisasi)</li>
-          <li>Akuntansi (Faktur, CoA, Auto Posting)</li>
-          <li>Pembayaran Digital (QRIS, EDC, Struk WA)</li>
-          <li>Aplikasi Owner & Order Online</li>
+          <li>Manajemen Karyawan (Absensi Foto & Otorisasi)</li>
+          <li>Akuntansi Lengkap(Faktur, CoA, Auto Posting)</li>
+          <li>Digital Payment(QRIS Dynamic,EDC (Kartu Debit Kredit),Sturktur Digital: Whatsapp,SMS,Email)</li>
+          <li>Aplikasi Owner</li>
+          <li>Order Online</li>
         </ul>
         <a href="https://pos.auliasoft.com/business/register?package=2" target="_blank" class="pricing-cta">Mulai Basic Plus</a>
       </div>
@@ -823,18 +840,22 @@ footer a { color: var(--accent); text-decoration: none; }
         <div class="pricing-name">Premium</div>
         <div class="pricing-price">
           <span class="pricing-amount">Rp 749.999</span>
+          <span class="pricing-period">/ bulan</span>
         </div>
         <ul class="pricing-features">
-          <li>Multi Outlet & Omnichannel (Marketplace, Web, Grabmart)</li>
-          <li>Kasir Canggih (Reservasi, Komisi, Serial/Batch Number, Grosir)</li>
-          <li>Manajemen Inventori (Produksi, Transfer Stok, Pengiriman)</li>
-          <li>CRM & Loyalitas Pelanggan (Deposit)</li>
-          <li>Laporan Analisis Bisnis Mendalam</li>
-          <li>Payroll Lengkap (Shift, Struktur Gaji, Transfer Otomatis)</li>
-          <li>Akuntansi Full (Faktur, CoA, Auto Posting)</li>
-          <li>Pembayaran Digital (QRIS, EDC, Struk Digital WA/Email)</li>
-          <li>Sistem Aulia Teams (Absensi Geolokasi, ePayslip, Integrasi Bank)</li>
-          <li>Aplikasi Owner & Order Online (QR E-menu, Gofood/Grabfood)</li>
+          <li>Multi Outlet</li>
+          <li>Toko Online(Website, Webtree, Weborder, Opsi Premium Domain, Shopee, Tokopedia, Grabmart, Multiakun Marketplace Omnichannel)</li>
+          <li>Aplikasi Kasir Online (Atur meja, Multisatuan, Reservasi & Produk Jasa, Leveling Komisi, Serial Number, Batch Number, Grosir)</li>
+          <li>Manajemen Inventori (COGS average, Fitur Produksi Stok, Transfer Stok antar Outlet, Serial Number, Batch Number, Permintaan Barang, Pengiriman Pembelian)</li>
+          <li>CRM(Deposit pelanggan)</li>
+          <li>Laporan Lengkap (Analisa bisnis)</li>
+          <li>Manajemen Karyawan dan Payroll (Absensi Foto, Otorisasi Advance, Data Karyawan, Shift Management, Struktur Gaji, Penggajian, Transfer Gaji)</li>
+          <li>Akuntansi Lengkap (Faktur, CoA, Auto Posting, Laporan Akuntansi)</li>
+          <li>Digital Payment (QRIS Dynamic, EDC (Kartu Debit Kredit), Struk Digital: WhatsApp, SMS, Email)</li>
+          <li>Aplikasi Owner</li>
+          <li>Order Online (Weborder, QR Emenu, Grabfood, Gofood)</li>
+          <li>Aulia Teams (Absensi Foto Geolokasi, ePayslip, Shift, Integrasi Rekening Bank, Broadcast Pengumuman)</li>
+        </ul>
         </ul>
         <a href="https://wa.me/6281241945881" target="_blank" class="pricing-cta">Konsultasi Gratis</a>
       </div>
@@ -949,11 +970,6 @@ footer a { color: var(--accent); text-decoration: none; }
         <h3>Toko Frozen Food</h3>
         <p>Toko makanan beku dengan cold chain management dan manajemen kadaluarsa.</p>
       </div>
-      <div class="domain-card fade-up">
-        <img src="gambar/bank.jpg" class="domain-img">
-        <h3>Mini Bank & LKM</h3>
-        <p>Sistem core banking sederhana untuk lembaga keuangan mikro dan mini bank komunitas.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -973,31 +989,26 @@ footer a { color: var(--accent); text-decoration: none; }
         <h3>Pemilik Toko & Warung</h3>
         <p>Pengusaha ritel skala kecil-menengah yang ingin mendigitalisasi operasional kasir, stok, dan pembukuan tanpa kerumitan teknis.</p>
       </div>
-      <div class="audience-card fade-up">
+      <!-- <div class="audience-card fade-up">
         <img src="gambar/kop.png" class="domain-img">
         <h3>Pengurus Koperasi</h3>
         <p>Manajer dan pengurus koperasi simpan pinjam, KSPPS, BMT, dan koperasi konsumen yang membutuhkan sistem POS terintegrasi.</p>
-      </div>
+      </div> -->
       <div class="audience-card fade-up">
         <img src="gambar/bumdess.jpg" class="domain-img">
         <h3>Pengelola BUMDes / KDMP</h3>
         <p>Pengurus badan usaha desa dan Koperasi Desa Merah Putih (KDMP) yang ingin mengelola unit usaha warung/toko secara digital.</p>
       </div>
-      <div class="audience-card fade-up">
+      <!-- <div class="audience-card fade-up">
         <img src="gambar/pendidikan.jpg" class="domain-img">
         <h3>Institusi Pendidikan</h3>
         <p>SMK jurusan Akuntansi & Perbankan yang membutuhkan simulasi nyata sistem kasir dan mini bank untuk praktik siswa.</p>
-      </div>
-      <div class="audience-card fade-up">
+      </div> -->
+      <!-- <div class="audience-card fade-up">
         <img src="gambar/reseler.jpg" class="domain-img">
         <h3>Reseller & Mitra Teknisi</h3>
         <p>Teknisi IT dan reseller yang melayani klien UMKM dan koperasi lokal di seluruh Indonesia dalam implementasi sistem POS.</p>
-      </div>
-      <div class="audience-card fade-up">
-        <img src="gambar/lazis.jpg" class="domain-img">
-        <h3>Lembaga Keuangan Syariah</h3>
-        <p>LKM, LAZIS, KSPPS, dan BMT yang membutuhkan sistem akuntansi sesuai prinsip syariah terintegrasi dengan fitur POS.</p>
-      </div>
+      </div> -->
     </div>
 
     <div class="testimonials-section">
@@ -1224,40 +1235,50 @@ footer a { color: var(--accent); text-decoration: none; }
       <div class="roadmap-step">
         <div class="roadmap-step-num">01</div>
         <div class="roadmap-version">Versi Basic</div>
-        <h3>Operasional Dasar</h3>
         <ul class="roadmap-features">
           <li>Single Outlet</li>
-          <li>Kasir Online</li>
+          <li>Toko Online</li>
+          <li>kasir Online</li>
           <li>Manajemen Inventori</li>
-          <li>Laporan Penjualan Sederhana</li>
-          <li>Pembayaran QRIS</li>
+          <li>CRM</li>
+          <li>Laporan Lengkap</li>
+          <li>Manajemen Karyawan</li>
+          <li>Pencatatan Keuangan (Invoice,SO,DO)</li>
+          <li>Digital Payment (QRIS)</li>
         </ul>
       </div>
       <div class="roadmap-step">
         <div class="roadmap-step-num">02</div>
         <div class="roadmap-version">Versi Standar</div>
-        <h3>Operasional Diperluas</h3>
         <ul class="roadmap-features">
           <li>Multi Outlet & Toko Online</li>
           <li>Kasir Online (Atur Meja & Multi-satuan)</li>
-          <li>Stok (COGS, Produksi, Transfer Outlet)</li>
+          <li>Manajemen Inventori (COGS, Produksi, Transfer Outlet)</li>
           <li>CRM & Deposit Pelanggan</li>
           <li>Laporan Analisis Bisnis Lengkap</li>
-          <li>SDM (Absensi Foto & Otorisasi)</li>
-          <li>Akuntansi (Faktur, CoA, Auto Posting)</li>
+          <li>Manajemen Karyawan (Absensi Foto & Otorisasi)</li>
+          <li>Akuntansi Lengkap(Faktur, CoA, Auto Posting)</li>
+          <li>Digital Payment(QRIS Dynamic,EDC (Kartu Debit Kredit),Sturktur Digital: Whatsapp,SMS,Email)</li>
+          <li>Aplikasi Owner</li>
+          <li>Order Online</li>
         </ul>
       </div>
       <div class="roadmap-step">
         <div class="roadmap-step-num">03</div>
         <div class="roadmap-version">Versi Premium</div>
-        <h3>Solusi Bisnis Lengkap</h3>
         <ul class="roadmap-features">
-          <li>Multi Outlet & Omnichannel (Marketplace, Web, Grabmart)</li>
-          <li>Kasir Canggih (Reservasi, Komisi, Serial/Batch Number, Grosir)</li>
-          <li>Manajemen Inventori Lanjutan</li>
-          <li>Payroll Lengkap (Shift, Struktur Gaji, Transfer Otomatis)</li>
-          <li>Akuntansi Full (Faktur, CoA, Auto Posting)</li>
-          <li>Sistem Aulia Teams</li>
+          <li>Multi Outlet</li>
+          <li>Toko Online(Website, Webtree, Weborder, Opsi Premium Domain, Shopee, Tokopedia, Grabmart, Multiakun Marketplace Omnichannel)</li>
+          <li>Aplikasi Kasir Online (Atur meja, Multisatuan, Reservasi & Produk Jasa, Leveling Komisi, Serial Number, Batch Number, Grosir)</li>
+          <li>Manajemen Inventori (COGS average, Fitur Produksi Stok, Transfer Stok antar Outlet, Serial Number, Batch Number, Permintaan Barang, Pengiriman Pembelian)</li>
+          <li>CRM(Deposit pelanggan)</li>
+          <li>Laporan Lengkap (Analisa bisnis)</li>
+          <li>Manajemen Karyawan dan Payroll (Absensi Foto, Otorisasi Advance, Data Karyawan, Shift Management, Struktur Gaji, Penggajian, Transfer Gaji)</li>
+          <li>Akuntansi Lengkap (Faktur, CoA, Auto Posting, Laporan Akuntansi)</li>
+          <li>Digital Payment (QRIS Dynamic, EDC (Kartu Debit Kredit), Struk Digital: WhatsApp, SMS, Email)</li>
+          <li>Aplikasi Owner</li>
+          <li>Order Online (Weborder, QR Emenu, Grabfood, Gofood)</li>
+          <li>Aulia Teams (Absensi Foto Geolokasi, ePayslip, Shift, Integrasi Rekening Bank, Broadcast Pengumuman)</li>
         </ul>
       </div>
     </div>
@@ -1326,97 +1347,56 @@ footer a { color: var(--accent); text-decoration: none; }
       <div class="pk-letter">J</div>
       <span class="section-label">Product Knowledge #10</span>
     </div>
-    <h2 class="section-title fade-up">Perbandingan dengan Kompetitor</h2>
-    <p class="section-sub fade-up">Lihat perbandingan E-POS AuliaSoft dengan kompetitor utama di pasar software kasir Indonesia.</p>
-    <div class="comparison-table fade-up">
+    <h2 class="section-title fade-up">Kompetitor Auliasoft</h2>
+    <p class="section-sub fade-up">Perbandingan berdasarkan data resmi dari <strong>accurate.id/pos/harga</strong> dan <strong>olsera.com/id/pricing</strong>.</p>
+
+    <div class="comparison-table fade-up" style="margin-top:2rem;">
       <table>
         <thead>
           <tr>
-            <th>Fitur & Aspek</th>
-            <th class="us">✅ E-POS AuliaSoft</th>
-            <th>Accurate POS</th>
-            <th>Olsera POS</th>
+            <th style="width:30%">Keunggulan</th>
+            <th class="us" style="width:23%">✅ E-POS AuliaSoft</th>
+            <th style="width:23%">Accurate POS</th>
+            <th style="width:23%">Olsera POS</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Harga Mulai</td>
-            <td class="us"><strong>Rp 149.999/bln</strong></td>
-            <td>Mulai dari harga lebih tinggi</td>
-            <td>Berbasis paket langganan</td>
+            <td><strong>Harga bulanan paling terjangkau</strong><br><span style="font-size:0.78rem;color:var(--muted)">Paket bulanan tanpa biaya add-on tersembunyi</span></td>
+            <td class="us"><strong>Rp 149.999/bln</strong><br><span style="font-size:0.75rem;color:var(--accent2)">★ Termurah</span></td>
+            <td>Rp 222.000/bln<br><span style="font-size:0.75rem;color:var(--muted)">+ add-on terpisah</span></td>
+            <td>Rp 1.288.000/thn<br><span style="font-size:0.75rem;color:var(--muted)">min. paket tahunan</span></td>
           </tr>
           <tr>
-            <td>Paket Tahunan Hemat</td>
-            <td class="us"><span class="check">✓</span> Rp 1.800.000/thn</td>
-            <td><span class="partial">~</span> Tersedia</td>
-            <td><span class="partial">~</span> Tersedia</td>
+            <td><strong>Ekosistem koperasi & BUMDes</strong><br><span style="font-size:0.78rem;color:var(--muted)">Satu-satunya POS dengan modul KSP, BMT, BUMDes, KDMP</span></td>
+            <td class="us"><span class="check">✓</span> KSP, BMT,<br>BUMDes, KDMP</td>
+            <td><span class="cross">✗</span> Tidak tersedia</td>
+            <td><span class="cross">✗</span> Tidak tersedia</td>
           </tr>
           <tr>
-            <td>Multi Lokasi/Cabang</td>
-            <td class="us"><span class="check">✓</span> Hingga 5+ lokasi</td>
-            <td><span class="check">✓</span> Tersedia</td>
-            <td><span class="check">✓</span> Tersedia</td>
+            <td><strong>Garansi aplikasi 1,5 tahun</strong><br><span style="font-size:0.78rem;color:var(--muted)">Jaminan perbaikan bug tanpa biaya tambahan</span></td>
+            <td class="us"><span class="check">✓</span> 1,5 tahun</td>
+            <td><span class="partial">~</span> Tidak disebutkan</td>
+            <td><span class="partial">~</span> Tidak disebutkan</td>
           </tr>
           <tr>
-            <td>Manajemen Stok</td>
-            <td class="us"><span class="check">✓</span> Lengkap + Stok Opname</td>
-            <td><span class="check">✓</span> Tersedia</td>
-            <td><span class="check">✓</span> Tersedia</td>
+            <td><strong>Multi bahasa (16 bahasa)</strong><br><span style="font-size:0.78rem;color:var(--muted)">Antarmuka 16 bahasa internasional</span></td>
+            <td class="us"><span class="check">✓</span> 16 bahasa</td>
+            <td><span class="partial">~</span> ID + EN saja</td>
+            <td><span class="partial">~</span> ID + EN saja</td>
           </tr>
           <tr>
-            <td>Laporan Keuangan Lengkap</td>
-            <td class="us"><span class="check">✓</span> Neraca + L/R + Arus Kas</td>
-            <td><span class="check">✓</span> Kuat di akuntansi</td>
-            <td><span class="partial">~</span> Terbatas</td>
-          </tr>
-          <tr>
-            <td>Modul Koperasi Terintegrasi</td>
-            <td class="us"><span class="check">✓</span> Ada — Ekosistem lengkap</td>
-            <td><span class="cross">✗</span> Tidak ada</td>
-            <td><span class="cross">✗</span> Tidak ada</td>
-          </tr>
-          <tr>
-            <td>Dukungan BUMDes / KDMP</td>
-            <td class="us"><span class="check">✓</span> Spesialis BUMDes/KDMP</td>
-            <td><span class="cross">✗</span> Tidak ada</td>
-            <td><span class="cross">✗</span> Tidak ada</td>
-          </tr>
-          <tr>
-            <td>Multi Bahasa (16 bahasa)</td>
-            <td class="us"><span class="check">✓</span> 16 Bahasa</td>
-            <td><span class="partial">~</span> Terbatas</td>
-            <td><span class="partial">~</span> Terbatas</td>
-          </tr>
-          <tr>
-            <td>Garansi Produk</td>
-            <td class="us"><span class="check">✓</span> 1.5 Tahun</td>
-            <td><span class="partial">~</span> Garansi standar</td>
-            <td><span class="partial">~</span> Garansi standar</td>
-          </tr>
-          <tr>
-            <td>Support WhatsApp 24/7</td>
-            <td class="us"><span class="check">✓</span> Online & WA 24/7</td>
-            <td><span class="partial">~</span> Jam kerja</td>
-            <td><span class="partial">~</span> Jam kerja</td>
-          </tr>
-          <tr>
-            <td>Pengalaman Industri</td>
-            <td class="us"><span class="check">✓</span> Sejak 2009 (15+ tahun)</td>
-            <td><span class="check">✓</span> Berpengalaman</td>
-            <td><span class="partial">~</span> Relatif baru</td>
-          </tr>
-          <tr>
-            <td>Layanan Kustomisasi Lokal</td>
-            <td class="us"><span class="check">✓</span> Tersedia & fleksibel</td>
-            <td><span class="partial">~</span> Terbatas</td>
-            <td><span class="partial">~</span> Terbatas</td>
+            <td><strong>Pengalaman 15+ tahun</strong><br><span style="font-size:0.78rem;color:var(--muted)">Melayani UMKM & koperasi Indonesia sejak 2009</span></td>
+            <td class="us"><span class="check">✓</span> Sejak 2009</td>
+            <td><span class="partial">~</span> Berpengalaman</td>
+            <td><span class="partial">~</span> Berdiri 2015</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div style="margin-top:2rem;background:rgba(26,58,107,0.05);border:2px solid rgba(26,58,107,0.15);border-radius:12px;padding:1.5rem;" class="fade-up">
-      <h4 style="color:var(--primary);margin-bottom:0.5rem">💡 Keunggulan Utama E-POS AuliaSoft</h4>
-      <p style="color:var(--muted);font-size:0.88rem;line-height:1.7">E-POS AuliaSoft unggul dalam <strong>ekosistem yang terintegrasi</strong> — bukan hanya aplikasi kasir, tetapi seluruh platform manajemen bisnis yang mencakup koperasi, BUMDes, KDMP, LKM, dan lembaga keuangan mikro. Ditambah harga yang kompetitif, garansi 1.5 tahun, support 24/7, dan pengalaman lebih dari 15 tahun melayani UMKM dan koperasi Indonesia.</p>
+
+    <div style="margin-top:1rem;font-size:0.78rem;color:var(--muted);text-align:right;" class="fade-up">
+      Sumber: accurate.id/pos/harga · olsera.com/id/pricing · pos.auliasoft.com — data per Mei 2026
     </div>
   </div>
 </section>
@@ -1432,55 +1412,67 @@ footer a { color: var(--accent); text-decoration: none; }
     <p class="section-sub fade-up">Tingkatkan kemampuan E-POS AuliaSoft dengan produk dan layanan pelengkap dari ekosistem AuliaSoft.</p>
     <div class="comp-grid">
       <div class="comp-card fade-up">
-        <img src="gambar/warung.png" class="complementary-img">
+        <img src="gambar/hardware.jpg" class="complementary-img">
         <div class="comp-body">
-          <span class="comp-tag">Keuangan</span>
-          <h3>Aplikasi Koperasi KSP</h3>
-          <p>Sistem manajemen koperasi simpan pinjam (KSP) lengkap dengan simpanan, pinjaman, angsuran, dan laporan keuangan koperasi.</p>
-          <div class="comp-price">Rp 1.500.000</div>
+          <span class="comp-tag">Hardware</span>
+          <h3>SCANNER BARCODE KASIR</h3>
+          <div class="comp-price">Rp 700.000</div>
         </div>
       </div>
       <div class="comp-card fade-up">
-        <img src="gambar/warung.png" class="complementary-img">
+        <img src="gambar/mesinuang.png" class="complementary-img">
         <div class="comp-body">
-          <span class="comp-tag">Syariah</span>
-          <h3>Aplikasi KSPPS BMT</h3>
-          <p>Sistem operasional Koperasi Simpan Pinjam Pembiayaan Syariah (KSPPS/BMT) berbasis hybrid, sesuai prinsip syariah Islam.</p>
-          <div class="comp-price">Rp 1.500.000</div>
+          <span class="comp-tag">Hardware</span>
+          <h3>Mesin Penghitung Uang</h3>
+          <div class="comp-price">Rp 2.700.000</div>
         </div>
       </div>
       <div class="comp-card fade-up">
-        <img src="gambar/warung.png" class="complementary-img">
+        <img src="gambar/epson.jpg" class="complementary-img">
         <div class="comp-body">
-          <span class="comp-tag">Perbankan</span>
-          <h3>Mini Bank System</h3>
-          <p>Core Banking System untuk KSP/KSPPS besar yang ingin memberikan layanan setara bank kepada anggota dan nasabah.</p>
+          <span class="comp-tag">Hardware</span>
+          <h3>Printer Buku Epson PLQ 20 Second</h3>
           <div class="comp-price">Rp 2.500.000</div>
         </div>
       </div>
       <div class="comp-card fade-up">
-        <img src="gambar/warung.png" class="complementary-img">
-        <div class="comp-body">
-          <span class="comp-tag">Desa</span>
-          <h3>Aplikasi BUMDes</h3>
-          <p>Manajemen Badan Usaha Milik Desa (BUMDes) digital yang mencakup unit simpan pinjam, perdagangan, dan jasa.</p>
-          <div class="comp-price">Rp 1.500.000</div>
-        </div>
-      </div>
-      <div class="comp-card fade-up">
-        <img src="gambar/warung.png" class="complementary-img">
+        <img src="gambar/epson.jpg" class="complementary-img">
         <div class="comp-body">
           <span class="comp-tag">Hardware</span>
-          <h3>Printer Struk & Kasir</h3>
-          <p>Perangkat keras pendukung seperti printer thermal, barcode scanner, cash drawer, dan display customer.</p>
+          <h3>Printer Buku Epson PLQ 20 New</h3>
+          <div class="comp-price">Rp 3.500.000</div>
+        </div>
+      </div>
+      <div class="comp-card fade-up">
+        <img src="gambar/tabungan.jpg" class="complementary-img">
+        <div class="comp-body">
+          <span class="comp-tag">Hardware</span>
+          <h3>Buku Tabungan Standar Bank</h3>
+          <div class="comp-price">Rp 6.000</div>
+        </div>
+      </div>
+      <div class="comp-card fade-up">
+        <img src="gambar/struk.jpg" class="complementary-img">
+        <div class="comp-body">
+          <span class="comp-tag">Hardware</span>
+          <h3>Printer Struk 58 Kasir</h3>
+          <div class="comp-price">Rp 500.000</div>
+        </div>
+      </div>
+      <div class="comp-card fade-up">
+        <img src="gambar/laci.jpg" class="complementary-img">
+        <div class="comp-body">
+          <span class="comp-tag">Hardware</span>
+          <h3>Laci Kasir</h3>
+          <div class="comp-price">Rp 650.000</div>
         </div>
       </div>
       <div class="comp-card fade-up">
         <img src="gambar/warung.png" class="complementary-img">
         <div class="comp-body">
-          <span class="comp-tag">Digital</span>
-          <h3>Jasa Pembuatan Web</h3>
-          <p>Layanan pembuatan website toko online, profil perusahaan, dan aplikasi web custom untuk kebutuhan bisnis Anda.</p>
+          <span class="comp-tag">Digidaw</span>
+          <h3>PPOB</h3>
+          <div class="comp-price">Rp???</div>
         </div>
       </div>
     </div>
